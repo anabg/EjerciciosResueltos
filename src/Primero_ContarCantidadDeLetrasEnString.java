@@ -15,14 +15,11 @@ public class Primero_ContarCantidadDeLetrasEnString {
 		String word3 = "ana";
 		System.out.println(" Original Word: " + word3 + " compressed word " + compressString(word3));
 		
-
 	}
 
 	private static String compressString(String word) {
 		
-
-		//char[] a = word.toCharArray();
-		StringBuilder endWord = new StringBuilder();
+		StringBuilder finalWord = new StringBuilder();
 		int count = 1;
 
 		System.out.println(word.length());
@@ -36,11 +33,11 @@ public class Primero_ContarCantidadDeLetrasEnString {
 
 					if (count > 1) {
 
-						endWord.append(String.valueOf(count)).append(String.valueOf(word.charAt(i)));
+						appendRepetedCharacter(word, finalWord, count, i);
 						count = 1;
 					} else {
 
-						endWord.append(String.valueOf(word.charAt(i)));
+						appendSingleCharacter(word, finalWord, i);
 						count = 1;
 					}
 
@@ -49,13 +46,21 @@ public class Primero_ContarCantidadDeLetrasEnString {
 
 				if (word.charAt(i) == word.charAt(i-1)) {
 					count++;
-					endWord.append(String.valueOf(count)).append(String.valueOf(word.charAt(i)));
+					appendRepetedCharacter(word, finalWord, count, i);
 				} else
-					endWord.append(String.valueOf(word.charAt(i)));
+					appendSingleCharacter(word, finalWord, i);
 
 			}
 		}
-		System.out.println(endWord);
-		return endWord.toString();
+		System.out.println(finalWord);
+		return finalWord.toString();
+	}
+
+	private static void appendSingleCharacter(String word, StringBuilder finalWord, int i) {
+		finalWord.append(String.valueOf(word.charAt(i)));
+	}
+
+	private static void appendRepetedCharacter(String word, StringBuilder finalWord, int count, int i) {
+		finalWord.append(String.valueOf(count)).append(String.valueOf(word.charAt(i)));
 	}
 }

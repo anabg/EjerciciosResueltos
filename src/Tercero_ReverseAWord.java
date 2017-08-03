@@ -12,6 +12,33 @@ public class Tercero_ReverseAWord {
 	
 	public static void main(String args[]){
 		
-		String word = "casa";
+		String word1 = "casa";
+		String finalWord1 = reverseWord(word1);
+		
+		String word2 = "perro";
+		String finalWord2 = reverseWord(word2);
+		
+		String word3 = "avion";
+		String finalWord3 = reverseWord(word3);
+		
+		String word4 = "mesa";
+		String finalWord4 = reverseWord(word4);
+		
+		System.out.println(word1 + " reverse: " + finalWord1);
+		System.out.println(word2 + " reverse: " + finalWord2);
+		System.out.println(word3 + " reverse: " + finalWord3);
+		System.out.println(word4 + " reverse: " + finalWord4);
+	}
+
+	private static String reverseWord(String word) {
+		String finalWord = "";
+		
+		for(int i = word.length()-1; i>=0 ; i--) {
+			
+			finalWord = finalWord + word.charAt(i);
+			
+			
+		}
+		return finalWord;
 	}
 }
