@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
-
-import sun.security.provider.certpath.CollectionCertStore;
 
 public class MiniMaxSum {
 	public static void calculateMaxAndMin(int[] arr){
