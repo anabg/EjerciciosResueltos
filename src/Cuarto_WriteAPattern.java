@@ -8,6 +8,7 @@ public class Cuarto_WriteAPattern {
 	 * teaches you How to use break and continue statement with loops in Java.
 	 * By the way you can print any character and use System.out.print() and
 	 * System.out.println())
+	 
 	 *
 	 ***
 	 *****
@@ -22,5 +23,20 @@ public class Cuarto_WriteAPattern {
 	 */
 	
 	
+	
+	public static void main (String args[]) {
+		
+		
+		int maxWeith= 5;
+		
+		/*String concatString = *;
+		
+		for(i=1; i<=maxWeith; i++) {
+			
+			
+		}
+		*/
+		
+	}
 	
 }
