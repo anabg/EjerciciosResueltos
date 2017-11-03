@@ -2,27 +2,26 @@ package com.codeforces;
 
 import java.util.Scanner;
 
-
-
 public class _01Watermelon {
-	
-	
-	
-	public static String isEvenWeight(int weight) {
-		
-		String result = "NO";
-		if((weight % 2) == 0) {
-			result = "YES";
+	public static String isWeightEven(int weight) {
+
+		String isEven = "NO";
+		if ((weight % 2) == 0) {
+			if (weight == 2)
+				return "NO";
+			isEven = "YES";
 		}
-		
-		return result;
-		
+
+		return isEven;
+
 	}
+
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int w = in.nextInt();
+		int weight = in.nextInt();
 
-		System.out.println(_01Watermelon.isEvenWeight(w));
-		//_01Watermelon.isEvenWeight(w);
+		System.out.println(_01Watermelon.isWeightEven(weight));
+
 	}
+
 }
