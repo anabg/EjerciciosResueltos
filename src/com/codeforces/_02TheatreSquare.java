@@ -62,7 +62,7 @@ public class _02TheatreSquare {
 		int n = in.nextInt();
 		int m = in.nextInt();
 		int a = in.nextInt();
-		
+
 		System.out.println(_02TheatreSquare.numberOfFlagstones(n, m, a));
 
 	}
