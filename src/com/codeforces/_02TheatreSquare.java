@@ -15,14 +15,15 @@ import java.util.Scanner;
  * has to be covered. It's not allowed to break the flagstones. The sides of
  * flagstones should be parallel to the sides of the Square.
  * 
- * Input The input contains three positive integer numbers in the first line: n,
+ * Input: The input contains three positive integer numbers in the first line: n,
  * m and a (1 ≤ n, m, a ≤ 109).
  * 
- * Output Write the needed number of flagstones.
+ * Output: Write the needed number of flagstones.
  * 
- * @author æAnita
+ * @author æBelen
  *
  */
+
 public class _02TheatreSquare {
 
 	public static long numberOfFlagstones(int n, int m, int a) {
@@ -61,9 +62,7 @@ public class _02TheatreSquare {
 		int n = in.nextInt();
 		int m = in.nextInt();
 		int a = in.nextInt();
-
-		// System.out.println(n + " " + m + " " + a );
-
+		
 		System.out.println(_02TheatreSquare.numberOfFlagstones(n, m, a));
 
 	}

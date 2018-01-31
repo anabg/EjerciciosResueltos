@@ -26,7 +26,9 @@ import java.util.Scanner;
  * Print YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos;
  * and NO in the opposite case.
  *
+ * @author Belen
  */
+
 public class _01Watermelon {
     public static String isWeightEven(int weight) {
 
