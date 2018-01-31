@@ -47,11 +47,17 @@ import java.util.Scanner;
  */
 public class _04NextRound {
 
-	private static int calculateNextRoundParticipant() {
+	private static int calculateNextRoundParticipant(List<Integer> values, int position) {
+
+		int counter = 0;
+		for(int i= position + 1 ; i<values.size() ; i++ ){
+			if(values.get(i)>=values.get(position)){
+				counter ++;
+			}
+		}
 
 
-
-		return 0;
+		return position + counter;
 	}
 
 	public static void main( String args[]){
@@ -66,6 +72,7 @@ public class _04NextRound {
 		List<Integer> values = new ArrayList<Integer>();
 
 
+
 		for(int i = 0; i<n; i++){
 
 			int input = in.nextInt();
@@ -75,7 +82,8 @@ public class _04NextRound {
 		int val = values.get(k-1);
 
 
-		calculateNextRoundParticipant();
+
+		System.out.println(calculateNextRoundParticipant(values, k));
 
 	}
 
