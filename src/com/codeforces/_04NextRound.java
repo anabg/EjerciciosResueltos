@@ -1,5 +1,7 @@
 package com.codeforces;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -44,15 +46,39 @@ import java.util.Scanner;
  *
  */
 public class _04NextRound {
-	
-	
+
+	private static int calculateNextRoundParticipant() {
+
+
+
+		return 0;
+	}
+
 	public static void main( String args[]){
 		
 		Scanner in = new Scanner(System.in);
 		
 		int n = in.nextInt();
 		int k = in.nextInt();
-		
+		System.out.println("n " + n);
+		System.out.println("k " + k);
+
+		List<Integer> values = new ArrayList<Integer>();
+
+
+		for(int i = 0; i<n; i++){
+
+			int input = in.nextInt();
+			values.add(input);
+		}
+
+		int val = values.get(k-1);
+
+
+		calculateNextRoundParticipant();
+
 	}
+
+
 
 }
