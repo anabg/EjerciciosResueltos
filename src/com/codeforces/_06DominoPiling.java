@@ -1,5 +1,7 @@
 package com.codeforces;
 
+import java.util.Scanner;
+
 /**
  * You are given a rectangular board of M?×?N squares. Also you are given an unlimited number of standard domino pieces of 2?×?1 squares.
  * You are allowed to rotate the pieces. You are asked to place as many dominoes as possible on the board so as to meet the following
@@ -32,5 +34,22 @@ package com.codeforces;
  * @author Belu
  */
 public class _06DominoPiling {
-    
+
+
+    public static int getNumberOfDominoes(int m, int n){
+
+        int size = m * n;
+
+        return size/2;
+
+    }
+
+    public static void main(String[] args){
+
+        Scanner in = new Scanner(System.in);
+        int m = in.nextInt();
+        int n = in.nextInt();
+        
+        System.out.println(getNumberOfDominoes(m,n));
+    }
 }
