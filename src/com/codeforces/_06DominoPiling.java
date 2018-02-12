@@ -49,7 +49,7 @@ public class _06DominoPiling {
         Scanner in = new Scanner(System.in);
         int m = in.nextInt();
         int n = in.nextInt();
-        
+
         System.out.println(getNumberOfDominoes(m,n));
     }
 }
