@@ -1,5 +1,7 @@
 package com.codeforces;
 
+import java.util.Scanner;
+
 /**
  *TEAM
  *
@@ -35,4 +37,43 @@ package com.codeforces;
  * @Author Belu
  */
 public class _07Team {
+
+
+    public static int getProblemsToResolve(int nroProblems){
+        int count = 0;
+        int sum = 0;
+        Scanner in = new Scanner(System.in);
+        int[][] res = new int[nroProblems][3];
+        for (int i= 0; i<nroProblems ; i++){
+
+            int ip = in.nextInt();
+            int iv = in.nextInt();
+            int it = in.nextInt();
+
+            res[i][0] = ip;
+            res[i][1] = iv;
+            res[i][2] = it;
+        }
+
+        for(int i = 0; i<nroProblems; i++){
+            sum = 0;
+            for (int j = 0; j<3; j++){
+                sum = sum + res[i][j];
+            }
+            if(sum>=2){
+                count ++;
+            }
+        }
+
+        return count;
+    }
+    public static void main (String[] args){
+
+        Scanner in = new Scanner(System.in);
+
+        int nroProblems = in.nextInt();
+
+        System.out.println(getProblemsToResolve(nroProblems));
+
+    }
 }
