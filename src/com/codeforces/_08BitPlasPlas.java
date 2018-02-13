@@ -45,9 +45,11 @@ import java.util.regex.Pattern;
  */
 public class _08BitPlasPlas {
 
-    public static int calculateValue(int statementNumber) {
+    public static int calculateValue() {
 
         int result = 0;
+        Scanner in = new Scanner(System.in);
+        int statementNumber = in.nextInt();
 
         /*Pattern p = Pattern.compile("[+]{2}X");
         Matcher m = p.matcher("++X");
@@ -63,32 +65,20 @@ public class _08BitPlasPlas {
 
         System.out.println(m.matches());
         System.out.println(m2.matches());*/
-        Scanner in = new Scanner(System.in);
 
         for (int i = 0; i < statementNumber; i++) {
-            //result = 0;
             String statement = in.next();
             if (statement.equalsIgnoreCase("x++") || statement.equalsIgnoreCase("++x")) {
                 result++;
             } else if (statement.equalsIgnoreCase("x--") || statement.equalsIgnoreCase("--x")) {
                 result--;
             }
-
-
         }
         return result;
 
     }
 
     public static void main(String[] args) {
-
-        Scanner in = new Scanner(System.in);
-
-        int statementNumber = in.nextInt();
-
-
-        System.out.println(calculateValue(statementNumber));
-
-        
+        System.out.println(calculateValue());
     }
 }
