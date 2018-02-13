@@ -39,10 +39,13 @@ import java.util.Scanner;
 public class _07Team {
 
 
-    public static int getProblemsToResolve(int nroProblems){
+    public static int getProblemsToResolve(){
+
+        Scanner in = new Scanner(System.in);
+        int nroProblems = in.nextInt();
+
         int count = 0;
         int sum = 0;
-        Scanner in = new Scanner(System.in);
         int[][] res = new int[nroProblems][3];
         for (int i= 0; i<nroProblems ; i++){
 
@@ -69,11 +72,7 @@ public class _07Team {
     }
     public static void main (String[] args){
 
-        Scanner in = new Scanner(System.in);
-
-        int nroProblems = in.nextInt();
-
-        System.out.println(getProblemsToResolve(nroProblems));
+        System.out.println(getProblemsToResolve());
 
     }
 }
