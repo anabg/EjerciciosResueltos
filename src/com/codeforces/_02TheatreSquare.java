@@ -35,8 +35,6 @@ public class _02TheatreSquare {
 		 * int countAnchoFlagstones = (int) m / a;
 		 */
 
-		int squareArea = n * m;
-		int flagstonesArea = a * a;
 		int countLargeFlagstone = 0;
 
 		countLargeFlagstone = (int) n / a;
