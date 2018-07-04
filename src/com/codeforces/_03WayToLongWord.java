@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
+ * Way Too Long Words
+ *
  * Sometimes some words like "localization" or "internationalization" are so long that writing
  * them many times in one text is quite tiresome.
  * Let's consider a word too long, if its length is strictly more than 10 characters. All too
@@ -40,6 +42,7 @@ import java.util.Scanner;
  * l10n
  * i18n
  * p43s
+ *
  */
 public class _03WayToLongWord {
 
