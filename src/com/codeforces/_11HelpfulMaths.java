@@ -1,5 +1,8 @@
 package com.codeforces;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  *  HELPFUL MATHS
  *
@@ -10,12 +13,12 @@ package com.codeforces;
  *  You've got the sum that was written on the board. Rearrange the summans and print the sum in such a way that Xenia can calculate the sum.
  *
  * Input
- * The first line contains a non-empty string s — the sum Xenia needs to count. String s contains no spaces. It only contains digits and
+ * The first line contains a non-empty string s ï¿½ the sum Xenia needs to count. String s contains no spaces. It only contains digits and
  * characters "+". Besides, string s is a correct sum of numbers 1, 2 and 3. String s is at most 100 characters long.
  *
  * Output
  * Print the new sum that Xenia can count.
- * Created by æBelu on 13/2/2018.
+ * Created by ï¿½Belu on 13/2/2018.
  *
  * Examples
  * input
@@ -34,4 +37,32 @@ package com.codeforces;
  * 2
  */
 public class _11HelpfulMaths {
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+
+        String word = in.next();
+        //String word2 = in.next();
+
+        System.out.print(generateSumWord(word));
+
+    }
+
+    public static String generateSumWord(String word){
+
+        String[] chars = word.split("\\+");
+        Arrays.sort(chars);
+        StringBuilder result = new StringBuilder();
+
+        for(int i = 0; i <= chars.length-1; i++){
+            result.append(chars[i]);
+            if(i!=chars.length-1){
+                result.append("+");
+            }
+        }
+        return result.toString();
+    }
+
+
 }
