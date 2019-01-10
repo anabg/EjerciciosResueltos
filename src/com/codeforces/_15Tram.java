@@ -104,8 +104,6 @@ public class _15Tram {
             passengerInsideTheTram = passengerInsideTheTram + arrivePassengers.get(i)- exitPassengers.get(i);
             max.add(passengerInsideTheTram);
         }
-
-        Collections.max(max);
         return Collections.max(max);
     }
 
