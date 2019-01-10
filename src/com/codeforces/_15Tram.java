@@ -105,8 +105,8 @@ public class _15Tram {
             max.add(passengerInsideTheTram);
         }
 
-        Collections.sort(max);
-        return max.get(max.size()-1);
+        Collections.max(max);
+        return Collections.max(max);
     }
 
 
