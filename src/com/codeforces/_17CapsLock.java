@@ -42,6 +42,16 @@ import java.util.Scanner;
  *  output
  *  Lock
  *
+ *
+ * cAPS
+ * Caps
+ *
+ * Lock
+ * Lock
+ *
+ * cAPSlOCK
+ * cAPSlOCK
+ *
  * Created by �Anita on 13/2/2018.
  */
 public class _17CapsLock {
@@ -55,7 +65,8 @@ public class _17CapsLock {
 
     private static String processCapsLock( String initialWord ){
 
-        if(initialWord.matches("^[A-Z]{1}[a-z]+$")){
+        if(initialWord.matches("^[A-Z]{1}[a-z]+$") || initialWord.matches("^[a-z]{1}[A-Za-z]+$[A-Za-z]+$") ){
+
             return initialWord;
         } else {
 
