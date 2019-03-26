@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
+ * Next Round
+ *
  * "Contestant who earns a score equal to or greater than the k-th place
  * finisher's score will advance to the next round, as long as the contestant
  * earns a positive score..." — an excerpt from contest rules.
@@ -13,7 +15,7 @@ import java.util.Scanner;
  * know their scores. Calculate how many participants will advance to the next
  * round.
  * <p>
- * Input The first line of the input contains two integers n and k (1 ≤ k ≤ n ≤
+ * Input: The first line of the input contains two integers n and k (1 ≤ k ≤ n ≤
  * 50) separated by a single space.
  * <p>
  * The second line contains n space-separated integers a1, a2, ..., an (0 ≤ ai ≤
@@ -21,7 +23,7 @@ import java.util.Scanner;
  * The given sequence is non-increasing (that is, for all i from 1 to n - 1 the
  * following condition is fulfilled: ai ≥ ai + 1).
  * <p>
- * Output Output the number of participants who advance to the next round.
+ * Output: Output the number of participants who advance to the next round.
  * <p>
  * <p>
  * Examples
@@ -41,7 +43,7 @@ import java.util.Scanner;
  * <p>
  * In the second example nobody got a positive score.
  *
- * @author æAnita
+ * @author æBelu
  */
 public class _04NextRound {
 

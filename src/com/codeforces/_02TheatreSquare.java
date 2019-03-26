@@ -1,10 +1,10 @@
 package com.codeforces;
 
 import java.util.Scanner;
-/*
- * 1000000000 
- */
+
 /**
+ * Theatre Square
+ *
  * Theatre Square in the capital city of Berland has a rectangular shape with
  * the size n × m meters. On the occasion of the city's anniversary, a decision
  * was taken to pave the Square with square granite flagstones. Each flagstone
@@ -29,13 +29,12 @@ public class _02TheatreSquare {
 	public static long numberOfFlagstones(int n, int m, int a) {
 
 		/*
-		 * int squareArea = n * m; int flagstonesArea = a * a; int
-		 * countLargeFlagstone = (int) n / a; int countAnchoFlagstones = (int) m
-		 * / a;
+		 * int squareArea = n * m;
+		 * int flagstonesArea = a * a;
+		 * int countLargeFlagstone = (int) n / a;
+		 * int countAnchoFlagstones = (int) m / a;
 		 */
 
-		int squareArea = n * m;
-		int flagstonesArea = a * a;
 		int countLargeFlagstone = 0;
 
 		countLargeFlagstone = (int) n / a;

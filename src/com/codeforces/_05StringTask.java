@@ -5,7 +5,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * STRING TASK
+ * String Task
+ *
  * <p/>
  * Petya started to attend programming lessons. On the first lesson his task was to write a simple program. The program was supposed to do
  * the following: in the given string, consisting if uppercase and lowercase Latin letters, it:
@@ -20,11 +21,11 @@ import java.util.regex.Pattern;
  * <p/>
  * Help Petya cope with this easy task.
  * <p/>
- * Input
+ * Input:
  * The first line represents input string of Petya's program. This string only consists of uppercase and lowercase Latin letters and its length
  * is from 1 to 100, inclusive.
  * <p/>
- * Output
+ * Output:
  * Print the resulting string. It is guaranteed that this string is not empty.
  * <p/>
  * Examples
@@ -46,7 +47,7 @@ import java.util.regex.Pattern;
  * output
  * .b.c.b
  *
- * @Author Belen
+ * @author æBelu
  */
 public class _05StringTask {
 
