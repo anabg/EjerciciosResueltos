@@ -1,5 +1,8 @@
 package com.codeforces;
 
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
 /**
  *  HELPFUL MATHS
  *
@@ -15,6 +18,7 @@ package com.codeforces;
  *
  * Output
  * Print the new sum that Xenia can count.
+ *
  * Created by ÊBelu on 13/2/2018.
  *
  * Examples
@@ -34,4 +38,21 @@ package com.codeforces;
  * 2
  */
 public class _11HelpfulMaths {
+
+    public static void main(String[] args){
+
+        Scanner in = new Scanner(System.in);
+        String sum = in.next();
+        String result = getOrderdSum(sum);
+
+    }
+
+    private static String getOrderdSum(String sum) {
+
+        String result = "";
+        Pattern p = Pattern.compile("/d");
+
+        return result;
+
+    }
 }
